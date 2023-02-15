@@ -1,5 +1,3 @@
-// Create a div with the class "task" and append it to the column depending on the button clicked
-
 var addBtn = document.getElementsByClassName("add-btn");
 var inputName = document.getElementById("nameTask");
 var inputEst = document.getElementById("estTask");
@@ -55,6 +53,8 @@ function addTask() {
 
     taskForm.classList.toggle("display-none");
     showBtn.classList.toggle("display-none");  
+
+    hideBtn();
 }
 
 for (var i = 0; i < addBtn.length; i++) {
@@ -69,16 +69,12 @@ showBtn.addEventListener("click", function() {
 
 function hideBtn() {
     for (var i = 0; i < task.length; i++) {
-        console.log(task[i].parentElement.previousElementSibling);
         if (task[i].parentElement.previousElementSibling == null) {
             task[i].querySelector(".prev-btn").classList.add("task_none");
         } else {
             task[i].querySelector(".prev-btn").classList.remove("task_none");
         }
-    }
 
-    for (var i = 0; i < task.length; i++) {
-        console.log(task[i].parentElement.nextElementSibling);
         if (task[i].parentElement.nextElementSibling == null) {
             task[i].querySelector(".next-btn").classList.add("task_none");
         } else {
