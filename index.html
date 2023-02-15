@@ -19,7 +19,7 @@
             id="nameTask"
             type="text"
             name="task"
-            placeholder="Enter a task"
+            placeholder="Task name"
           />
           <input
             id="estTask"
@@ -36,17 +36,17 @@
         </div>
         <div id="progress" class="column">
           <h1 class="column-title">In Progress</h1>
-          <button id="progressBtn" class="add-btn">+</button>
-        </div>
-        <div id="tested" class="column">
-          <h1 class="column-title">To Be Tested</h1>
-          <div class="task">
+          <div class="task display-none">
             <button class="prev-btn">&lt;</button>
             <h4 class="task-name">Task</h4>
             <h5 class="task-est">99</h5>
             <button class="next-btn">&gt;</button>
             <button class="delete-btn">x</button>
           </div>
+          <button id="progressBtn" class="add-btn">+</button>
+        </div>
+        <div id="tested" class="column">
+          <h1 class="column-title">To Be Tested</h1>
           <button id="testedBtn" class="add-btn">+</button>
         </div>
         <div id="done" class="column">
@@ -56,6 +56,7 @@
       </section>
       <div class="footer">
         <h4>Organize your tasks here!</h4>
+        <h5>&copy; Copyright 2023 dariogmzfdz</h5>
       </div>
     </main>
 

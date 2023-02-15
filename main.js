@@ -25,7 +25,7 @@ function addTask() {
     }
 
     var newTask = task[0].cloneNode(true);
-    newTask.classList.remove("task_none");
+    newTask.classList.remove("display-none");
     var newTaskName = newTask.getElementsByClassName("task-name")[0];
     var newTaskEst = newTask.getElementsByClassName("task-est")[0];
 
