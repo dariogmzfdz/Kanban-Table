@@ -101,26 +101,8 @@ function moveTask() {
     
     if (this.classList.contains("prev-btn")) {
         task.parentElement.previousElementSibling.insertBefore(newTask, task.parentElement.previousElementSibling.lastElementChild);
-        /* if (task.parentElement.id == "todo") {
-            return;
-        } else if (task.parentElement.id == "progress") {
-            column[0].insertBefore(newTask, column[0].lastElementChild);
-        } else if (task.parentElement.id == "tested") {
-            column[1].insertBefore(newTask, column[1].lastElementChild);
-        } else if (task.parentElement.id == "done") {
-            column[2].insertBefore(newTask, column[2].lastElementChild);
-        } */
     } else if (this.classList.contains("next-btn")) {
         task.parentElement.nextElementSibling.insertBefore(newTask, task.parentElement.nextElementSibling.lastElementChild);
-        /* if (task.parentElement.id == "todo") {
-            column[1].insertBefore(newTask, column[1].lastElementChild);
-        } else if (task.parentElement.id == "progress") {
-            column[2].insertBefore(newTask, column[2].lastElementChild);
-        } else if (task.parentElement.id == "tested") {
-            column[3].insertBefore(newTask, column[3].lastElementChild);
-        } else if (task.parentElement.id == "done") {
-            return;
-        } */
     }
     
     task.remove();
